@@ -1,0 +1,100 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Hackathon_Dish_Care.csv",
+				"container": "demo"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Markets",
+				"type": "String"
+			},
+			{
+				"name": "PG MEGACATEGORY",
+				"type": "String"
+			},
+			{
+				"name": "PG SUPER CATEGORY",
+				"type": "String"
+			},
+			{
+				"name": "PG CATEGORY",
+				"type": "String"
+			},
+			{
+				"name": "PG SEGMENT",
+				"type": "String"
+			},
+			{
+				"name": "PG FORM",
+				"type": "String"
+			},
+			{
+				"name": "PG MANUFACTURER",
+				"type": "String"
+			},
+			{
+				"name": "PG BRAND",
+				"type": "String"
+			},
+			{
+				"name": "PG SUBBRAND",
+				"type": "String"
+			},
+			{
+				"name": "PG SIZE",
+				"type": "String"
+			},
+			{
+				"name": "PG VARIETY",
+				"type": "String"
+			},
+			{
+				"name": "PG CONCENTRATION",
+				"type": "String"
+			},
+			{
+				"name": "PG SCENT GROUP",
+				"type": "String"
+			},
+			{
+				"name": "PG PRICE SEGMENT",
+				"type": "String"
+			},
+			{
+				"name": "PG SKU DETAIL",
+				"type": "String"
+			},
+			{
+				"name": "Periods",
+				"type": "String"
+			},
+			{
+				"name": "$0 ",
+				"type": "String"
+			},
+			{
+				"name": "VOL (000)",
+				"type": "String"
+			},
+			{
+				"name": "TDP",
+				"type": "String"
+			}
+		]
+	}
+}
